@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Întrebări Frecvente - BasketProgress</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Stil personalizat -->
+    <style>
+        body {
+            background-color: #f4f4f4;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #ff6b00, #ff9a00);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            color: #ff6b00;
+        }
+        .faq-item {
+            margin-bottom: 25px;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 15px;
+        }
+        .faq-question {
+            font-weight: 600;
+            color: #ff6b00;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigație -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">BasketProgress</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="playerDropdown" role="button" data-bs-toggle="dropdown">
+                            Jucător
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="dashboard-player.html">Tablou de Bord</a></li>
+                            <li><a class="dropdown-item" href="training-log.html">Jurnal Antrenamente</a></li>
+                            <li><a class="dropdown-item" href="performance-chart.html">Grafice Performanță</a></li>
+                            <li><a class="dropdown-item" href="nutrition-plan.html">Plan Nutriție</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="coachDropdown" role="button" data-bs-toggle="dropdown">
+                            Antrenor
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="coach-dashboard.html">Panou Control</a></li>
+                            <li><a class="dropdown-item" href="team-performance.html">Performanță Echipă</a></li>
+                            <li><a class="dropdown-item" href="player-management.html">Gestionare Jucători</a></li>
+                            <li><a class="dropdown-item" href="training-program.html">Program Antrenament</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="physiotherapistDropdown" role="button" data-bs-toggle="dropdown">
+                            Preparator Fizic
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="physical-assessment.html">Evaluare Fizică</a></li>
+                            <li><a class="dropdown-item" href="recovery-plan.html">Plan Recuperare</a></li>
+                            <li><a class="dropdown-item" href="injury-prevention.html">Prevenție Accidentări</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="managerDropdown" role="button" data-bs-toggle="dropdown">
+                            Manager Echipă
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="team-stats.html">Statistici Echipă</a></li>
+                            <li><a class="dropdown-item" href="player-transfers.html">Transferuri Jucători</a></li>
+                            <li><a class="dropdown-item" href="budget-management.html">Management Buget</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Autentificare</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="infoDropdown" role="button" data-bs-toggle="dropdown">
+                            Informații
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="despre-noi.html">Despre Noi</a></li>
+                            <li><a class="dropdown-item" href="faq.html">Întrebări Frecvente</a></li>
+                            <li><a class="dropdown-item" href="termeni.html">Termeni și Condiții</a></li>
+                            <li><a class="dropdown-item" href="confidentialitate.html">Politica de Confidențialitate</a></li>
+                            <li><a class="dropdown-item" href="cookies.html">Politica de Cookies</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Secțiune Hero -->
+    <div class="hero-section">
+        <div class="container">
+            <h1>Întrebări Frecvente</h1>
+            <p>Tot ce trebuie să știi despre platforma BasketProgress</p>
+        </div>
+    </div>
+
+    <!-- Conținut FAQ -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="faq-item">
+                    <div class="faq-question">Ce este BasketProgress?</div>
+                    <div class="faq-answer">
+                        <p>BasketProgress este o platformă integrată de management pentru baschet care conectează toate rolurile importante din ecosistemul unui club: jucători, antrenori, preparatori fizici și manageri de echipă. Platforma oferă instrumente specializate pentru fiecare rol, permițând monitorizarea performanței, planificarea antrenamentelor, prevenirea accidentărilor și gestionarea echipei.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Cine poate folosi BasketProgress?</div>
+                    <div class="faq-answer">
+                        <p>Platforma noastră este concepută pentru:</p>
+                        <ul>
+                            <li>Jucători de baschet de toate nivelurile</li>
+                            <li>Antrenori și staff tehnic</li>
+                            <li>Preparatori fizici și personal medical</li>
+                            <li>Manageri de echipă și administratori</li>
+                            <li>Cluburi de baschet și academii sportive</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Cât costă utilizarea platformei BasketProgress?</div>
+                    <div class="faq-answer">
+                        <p>Oferim mai multe planuri de abonament adaptate nevoilor diferitelor utilizatori:</p>
+                        <ul>
+                            <li><strong>Plan Individual:</strong> Pentru jucători individuali, cu funcționalități de bază pentru monitorizarea performanței personale.</li>
+                            <li><strong>Plan Echipă:</strong> Pentru cluburi mici și academii, cu acces complet pentru antrenori și jucători.</li>
+                            <li><strong>Plan Profesional:</strong> Pentru cluburi profesioniste, cu acces complet la toate modulele și suport prioritar.</li>
+                        </ul>
+                        <p>Pentru detalii despre prețuri și funcționalități incluse în fiecare plan, vă rugăm să consultați pagina noastră de <a href="preturi.html">Prețuri</a>.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Ce echipament sau dispozitive sunt necesare pentru a utiliza BasketProgress?</div>
+                    <div class="faq-answer">
+                        <p>BasketProgress poate fi accesat de pe orice dispozitiv cu conexiune la internet și un browser web modern. Pentru experiența optimă, recomandăm:</p>
+                        <ul>
+                            <li>Un smartphone, tabletă sau computer</li>
+                            <li>Conexiune stabilă la internet</li>
+                            <li>Browser actualizat (Chrome, Firefox, Safari, Edge)</li>
+                        </ul>
+                        <p>Aplicația noastră mobilă este disponibilă pentru iOS și Android pentru o experiență mai bună pe dispozitivele mobile.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Cum îmi pot crea un cont pe BasketProgress?</div>
+                    <div class="faq-answer">
+                        <p>Crearea unui cont este simplă:</p>
+                        <ol>
+                            <li>Accesează butonul "Începe Acum" de pe pagina principală</li>
+                            <li>Completează formularul de înregistrare cu datele tale</li>
+                            <li>Selectează tipul de cont (Jucător, Antrenor, etc.)</li>
+                            <li>Alege planul de abonament potrivit pentru tine</li>
+                            <li>Confirmă contul prin link-ul primit pe email</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Cum îmi pot conecta echipa sau clubul la platformă?</div>
+                    <div class="faq-answer">
+                        <p>Conturile de tip antrenor sau manager echipă au posibilitatea de a crea o echipă virtuală și de a invita jucătorii. Procesul implică:</p>
+                        <ol>
+                            <li>Accesarea secțiunii "Echipă" din panoul de control</li>
+                            <li>Crearea unei noi echipe și configurarea detaliilor</li>
+                            <li>Generarea de coduri de invitație sau trimiterea de invitații prin email</li>
+                            <li>Jucătorii vor primi instrucțiuni pentru a se conecta la echipă</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Datele mele sunt în siguranță pe BasketProgress?</div>
+                    <div class="faq-answer">
+                        <p>Siguranța și confidențialitatea datelor utilizatorilor noștri sunt prioritare. Implementăm măsuri stricte de securitate:</p>
+                        <ul>
+                            <li>Criptare end-to-end pentru toate datele sensibile</li>
+                            <li>Servere securizate cu cele mai noi protocoale de protecție</li>
+                            <li>Autentificare în doi pași disponibilă pentru conturi</li>
+                            <li>Politici clare privind utilizarea datelor, conform GDPR</li>
+                        </ul>
+                        <p>Pentru mai multe detalii, consultați <a href="confidentialitate.html">Politica noastră de Confidențialitate</a>.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Cum pot obține suport tehnic?</div>
+                    <div class="faq-answer">
+                        <p>Oferim mai multe canale de suport:</p>
+                        <ul>
+                            <li>Email: support@basketprogress.ro</li>
+                            <li>Telefon: +40 721 234 567 (Luni-Vineri, 9:00-17:00)</li>
+                            <li>Chat live în aplicație (pentru utilizatorii cu abonament)</li>
+                            <li>Centrul de Ajutor din contul tău, cu ghiduri și tutoriale</li>
+                        </ul>
+                        <p>Timpul mediu de răspuns este de maximum 24 de ore pentru email și imediat pentru chat live.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Pot anula abonamentul oricând?</div>
+                    <div class="faq-answer">
+                        <p>Da, poți anula abonamentul în orice moment. Procesul este simplu:</p>
+                        <ol>
+                            <li>Accesează "Setări cont" din profilul tău</li>
+                            <li>Navighează la secțiunea "Abonament"</li>
+                            <li>Selectează opțiunea "Anulare abonament"</li>
+                            <li>Confirmă decizia</li>
+                        </ol>
+                        <p>Vei avea acces la platformă până la sfârșitul perioadei de facturare curente. Nu aplicăm penalități pentru anulare.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>BasketProgress</h5>
+                    <p>Tehnologie pentru performanță în baschet</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Navigare Rapidă</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Acasă</a></li>
+                        <li><a href="despre-noi.html" class="text-white">Despre Noi</a></li>
+                        <li><a href="faq.html" class="text-white">Întrebări Frecvente</a></li>
+                        <li><a href="login.html" class="text-white">Autentificare</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Informații Legale</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="termeni.html" class="text-white">Termeni și Condiții</a></li>
+                        <li><a href="confidentialitate.html" class="text-white">Politica de Confidențialitate</a></li>
+                        <li><a href="cookies.html" class="text-white">Politica de Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact</h5>
+                    <p>office@basketprogress.ro<br>+40 721 234 567</p>
+                </div>
+            </div>
+            <hr class="my-2">
+            <p>&copy; 2024 BasketProgress. Toate drepturile rezervate.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS și dependențe -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

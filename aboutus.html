@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despre Noi - BasketProgress</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Stil personalizat -->
+    <style>
+        body {
+            background-color: #f4f4f4;
+        }
+        .page-header {
+            background: linear-gradient(135deg, #ff6b00, #ff9a00);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .team-member {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .team-member img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 4px solid #ff9a00;
+        }
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background-color: #ff9a00;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+        }
+        .timeline-item {
+            margin-bottom: 50px;
+            position: relative;
+        }
+        .timeline-content {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 45%;
+            position: relative;
+        }
+        .timeline-item:nth-child(odd) .timeline-content {
+            float: left;
+        }
+        .timeline-item:nth-child(even) .timeline-content {
+            float: right;
+        }
+        .timeline-content::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            right: -10px;
+            top: 15px;
+            background: #ff9a00;
+            border-radius: 50%;
+        }
+        .timeline-item:nth-child(even) .timeline-content::after {
+            left: -10px;
+        }
+        .timeline-date {
+            display: inline-block;
+            padding: 5px 15px;
+            background: #ff6b00;
+            color: white;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .vision-section {
+            background-color: white;
+            padding: 40px 0;
+            margin: 40px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigație -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">BasketProgress</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="playerDropdown" role="button" data-bs-toggle="dropdown">
+                            Jucător
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="dashboard-player.html">Tablou de Bord</a></li>
+                            <li><a class="dropdown-item" href="training-log.html">Jurnal Antrenamente</a></li>
+                            <li><a class="dropdown-item" href="performance-chart.html">Grafice Performanță</a></li>
+                            <li><a class="dropdown-item" href="nutrition-plan.html">Plan Nutriție</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="coachDropdown" role="button" data-bs-toggle="dropdown">
+                            Antrenor
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="coach-dashboard.html">Panou Control</a></li>
+                            <li><a class="dropdown-item" href="team-performance.html">Performanță Echipă</a></li>
+                            <li><a class="dropdown-item" href="player-management.html">Gestionare Jucători</a></li>
+                            <li><a class="dropdown-item" href="training-program.html">Program Antrenament</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="physiotherapistDropdown" role="button" data-bs-toggle="dropdown">
+                            Preparator Fizic
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="physical-assessment.html">Evaluare Fizică</a></li>
+                            <li><a class="dropdown-item" href="recovery-plan.html">Plan Recuperare</a></li>
+                            <li><a class="dropdown-item" href="injury-prevention.html">Prevenție Accidentări</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="managerDropdown" role="button" data-bs-toggle="dropdown">
+                            Manager Echipă
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="team-stats.html">Statistici Echipă</a></li>
+                            <li><a class="dropdown-item" href="player-transfers.html">Transferuri Jucători</a></li>
+                            <li><a class="dropdown-item" href="budget-management.html">Management Buget</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Autentificare</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="despre-noi.html">Despre Noi</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Antet Pagină -->
+    <div class="page-header">
+        <div class="container">
+            <h1>Despre Noi</h1>
+            <p class="lead">Misiunea noastră este să transformăm dezvoltarea jucătorilor de baschet prin tehnologie</p>
+        </div>
+    </div>
+
+    <!-- Secțiune Poveste -->
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-md-6">
+                <h2>Povestea Noastră</h2>
+                <p>BasketProgress a fost fondat în 2022 de către o echipă de foști jucători de baschet profesioniști, antrenori și specialiști în tehnologie, uniți de pasiunea pentru baschet și dorința de a revoluționa modul în care jucătorii își monitorizează și îmbunătățesc performanța.</p>
+                <p>Am observat că, în timp ce alte sporturi beneficiau de platforme digitale avansate, baschetul românesc nu dispunea de o soluție integrată care să conecteze toți actorii implicați în dezvoltarea unui jucător. Astfel a luat naștere BasketProgress - prima platformă completă de management al performanței în baschet din România.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="/api/placeholder/600/400" alt="Echipa BasketProgress" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </div>
+
+    <!-- Secțiune Viziune și Misiune -->
+    <div class="vision-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Viziunea Noastră</h2>
+                    <p>Ne imaginăm un viitor în care fiecare jucător de baschet din România are acces la instrumente digitale de ultimă generație pentru a-și maximiza potențialul. Credem că datele și analiza performanței pot transforma radical nivelul baschetului românesc.</p>
+                </div>
+                <div class="col-md-6">
+                    <h2>Misiunea Noastră</h2>
+                    <p>Ne-am asumat misiunea de a democratiza accesul la instrumente de analiză sportivă avansată, de a crea o comunitate unită în jurul excelenței sportive și de a ridica nivelul baschetului românesc prin tehnologie și date.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Secțiune Echipă -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Echipa Noastră</h2>
+        <div class="row">
+            <div class="col-md-4 team-member">
+                <img src="/api/placeholder/200/200" alt="Alexandru Popescu">
+                <h4>Alexandru Popescu</h4>
+                <p class="text-muted">Co-fondator & CEO</p>
+                <p>Fost jucător profesionist cu experiență de 12 ani în Liga Națională</p>
+            </div>
+            <div class="col-md-4 team-member">
+                <img src="/api/placeholder/200/200" alt="Elena Ionescu">
+                <h4>Elena Ionescu</h4>
+                <p class="text-muted">Director Tehnic</p>
+                <p>Expert în știința sportului cu doctorat în biomecanică sportivă</p>
+            </div>
+            <div class="col-md-4 team-member">
+                <img src="/api/placeholder/200/200" alt="Mihai Dumitrescu">
+                <h4>Mihai Dumitrescu</h4>
+                <p class="text-muted">Lead Developer</p>
+                <p>Specialist în dezvoltare software cu experiență în analiza datelor sportive</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Secțiune Cronologie -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Cronologia Noastră</h2>
+        <div class="timeline">
+            <div class="timeline-item clearfix">
+                <div class="timeline-content">
+                    <span class="timeline-date">2022</span>
+                    <h4>Fondarea BasketProgress</h4>
+                    <p>Lansarea conceptului și formarea echipei inițiale</p>
+                </div>
+            </div>
+            <div class="timeline-item clearfix">
+                <div class="timeline-content">
+                    <span class="timeline-date">2023</span>
+                    <h4>Lansarea Versiunii Beta</h4>
+                    <p>Prima versiune funcțională testată cu 5 cluburi din România</p>
+                </div>
+            </div>
+            <div class="timeline-item clearfix">
+                <div class="timeline-content">
+                    <span class="timeline-date">2024</span>
+                    <h4>Lansarea Oficială</h4>
+                    <p>Platforma completă lansată la nivel național cu toate funcționalitățile</p>
+                </div>
+            </div>
+            <div class="timeline-item clearfix">
+                <div class="timeline-content">
+                    <span class="timeline-date">2025</span>
+                    <h4>Expansiune Regională</h4>
+                    <p>Planuri de extindere în Europa de Est</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Secțiune Contactează-ne -->
+    <div class="container mt-5">
+        <div class="card shadow">
+            <div class="card-body text-center p-5">
+                <h2>Hai să Discutăm</h2>
+                <p class="lead">Suntem mereu deschiși să discutăm cu jucători, antrenori și cluburi despre cum putem colabora</p>
+                <a href="contact.html" class="btn btn-lg" style="background: linear-gradient(135deg, #ff6b00, #ff9a00); color: white;">Contactează-ne</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>BasketProgress</h5>
+                    <p>Tehnologie pentru performanță în baschet</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Link-uri Rapide</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Acasă</a></li>
+                        <li><a href="despre-noi.html" class="text-white">Despre Noi</a></li>
+                        <li><a href="termeni.html" class="text-white">Termeni și Condiții</a></li>
+                        <li><a href="confidentialitate.html" class="text-white">Politica de Confidențialitate</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact</h5>
+                    <p>office@basketprogress.ro<br>+40 721 234 567</p>
+                </div>
+            </div>
+            <hr class="my-2">
+            <p>&copy; 2024 BasketProgress. Toate drepturile rezervate.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS și dependențe -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
